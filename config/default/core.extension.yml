@@ -1,5 +1,6 @@
 module:
   automated_cron: 0
+  better_exposed_filters: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -8,23 +9,38 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_filter: 0
+  config_ignore: 0
   contact: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
   help: 0
   history: 0
   image: 0
+  imce: 0
+  jquery_ui: 0
+  jquery_ui_datepicker: 0
+  jquery_ui_slider: 0
+  jquery_ui_touch_punch: 0
   link: 0
+  link_attributes: 0
+  media: 0
+  media_library: 0
+  menu_item_extras: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
+  minifyhtml: 0
   node: 0
   options: 0
   page_cache: 0
@@ -34,14 +50,20 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  simple_sitemap: 0
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
+  twig_field_value: 0
   update: 0
   user: 0
   views_ui: 0
+  viewsreference: 0
+  webform: 0
+  pathauto: 1
   views: 10
   paragraphs: 11
   standard: 1000
@@ -50,6 +72,7 @@ theme:
   classy: 0
   bartik: 0
   seven: 0
+  adminimal_theme: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
