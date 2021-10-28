@@ -1,0 +1,14 @@
+uuid: 635e068e-bd17-426b-820e-0935cbb6011b
+name: 'Drupal Learning'
+mail: dev@bang.com.au
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

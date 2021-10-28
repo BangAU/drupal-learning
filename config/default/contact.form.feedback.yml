@@ -1,0 +1,14 @@
+uuid: b0215bc4-af80-493b-ab7e-3712f25f5285
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - dev@bang.com.au
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
