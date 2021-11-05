@@ -1,0 +1,28 @@
+uuid: 4e59b8f2-0a5d-4f51-adb6-da31ab26768c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.projects.body
+    - node.type.projects
+  module:
+    - text
+    - user
+id: node.projects.default
+targetEntityType: node
+bundle: projects
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

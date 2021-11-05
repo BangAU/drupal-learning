@@ -1,0 +1,38 @@
+uuid: df4e688f-a3d2-40e0-95a0-f41ea389a8f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_top_left
+    - field.field.block_content.header_top_left.field_header_address
+    - field.field.block_content.header_top_left.field_header_email
+id: block_content.header_top_left.default
+targetEntityType: block_content
+bundle: header_top_left
+mode: default
+content:
+  field_header_address:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_header_email:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
