@@ -1,0 +1,10 @@
+name: Events Log Track
+description: 'Logs general CUD events performed by the user (using the forms) on the website.'
+type: module
+core: '8.x'
+package: Statistics
+
+# Information added by Drupal.org packaging script on 2020-06-17
+version: '8.x-2.0'
+project: 'events_log_track'
+datestamp: 1592370509

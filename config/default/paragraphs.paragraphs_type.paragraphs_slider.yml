@@ -1,0 +1,10 @@
+uuid: 728e2b46-c9ff-43d9-ab7e-0187cd54177d
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphs_slider
+label: 'Paragraphs - Slider'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

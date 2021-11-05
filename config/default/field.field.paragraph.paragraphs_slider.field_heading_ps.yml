@@ -1,0 +1,19 @@
+uuid: 2dee2354-0b6c-444b-b22a-ed60a4722f2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_ps
+    - paragraphs.paragraphs_type.paragraphs_slider
+id: paragraph.paragraphs_slider.field_heading_ps
+field_name: field_heading_ps
+entity_type: paragraph
+bundle: paragraphs_slider
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

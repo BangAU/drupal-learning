@@ -1,0 +1,10 @@
+uuid: 911844e5-e9e6-4223-86c6-4e78970a9caa
+langcode: en
+status: true
+dependencies: {  }
+id: slider_fieldset
+label: 'Slider fieldset'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

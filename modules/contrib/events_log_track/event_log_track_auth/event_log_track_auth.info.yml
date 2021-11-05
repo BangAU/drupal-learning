@@ -1,0 +1,12 @@
+name: Events Log Track User Authentication
+description: 'Logs user authentication (login logout and request password).'
+type: module
+dependencies:
+  - event_log_track:event_log_track
+core: '8.x'
+package: Statistics
+
+# Information added by Drupal.org packaging script on 2020-06-17
+version: '8.x-2.0'
+project: 'events_log_track'
+datestamp: 1592370509
