@@ -1,0 +1,17 @@
+name: 'Bang'
+core: '8.x'
+core_version_requirement: ^8 || ^9
+type: theme
+base theme: classy
+description: 'Drupal Learning'
+package: Core
+libraries:
+  - atparramatta/global-styling
+regions:
+  header: Header
+  content: Content
+  sidebar: Sidebar
+  bottom_panel: Bottom Panel
+  footer: Footer
+version: '8.3.6'
+project: 'drupal'
