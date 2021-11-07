@@ -39,7 +39,6 @@ global-styling:
     assets/vendors/jquery-validate/jquery.validate.min.js: {}
     assets/vendors/nouislider/nouislider.min.js: {}
     assets/vendors/odometer/odometer.min.js: {}
-
     assets/vendors/swiper/swiper.min.js: {}
     assets/vendors/tiny-slider/tiny-slider.min.js: {}
     assets/vendors/wnumb/wNumb.min.js: {}
@@ -54,6 +53,7 @@ global-styling:
     assets/vendors/vegas/vegas.min.js: {}
     assets/vendors/jquery-ui/jquery-ui.js: {}
     assets/vendors/timepicker/timePicker.js: {}
+    assets/js/kontin.js: {}
   dependencies:
     - core/jquery
     - core/drupal
