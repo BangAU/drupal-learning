@@ -44,21 +44,25 @@
 #}
 <div class="layout-container">
 
-{{ page.header }}
+<header class="main-header clearfix" id="page-header">
+    {{ page.header_top }}
+    {{ page.header_bottom }}
+</header>
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
+<main role="main">
+  <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-  </main>
+  <div class="layout-content">
+    {{ page.content }}
+  </div>{# /.layout-content #}
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
+</main>
+
+{% if page.footer %}
+  <footer role="contentinfo">
+    {{ page.footer }}
+  </footer>
+{% endif %}
 
 </div>{# /.layout-container #}

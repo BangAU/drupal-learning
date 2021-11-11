@@ -10,8 +10,8 @@ _core:
   default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
 id: bang_powered
 theme: bang
-region: header
-weight: 1
+region: header_top
+weight: -1
 provider: null
 plugin: system_powered_by_block
 settings:

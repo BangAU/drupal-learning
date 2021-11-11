@@ -1,0 +1,25 @@
+uuid: ea55fc62-a4ef-4ce7-9763-8744505166b7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:38c04f18-2401-49a9-801e-67d30e2d68a0'
+  module:
+    - block_content
+  theme:
+    - bang
+id: headercontactsection
+theme: bang
+region: header_top
+weight: -8
+provider: null
+plugin: 'block_content:38c04f18-2401-49a9-801e-67d30e2d68a0'
+settings:
+  id: 'block_content:38c04f18-2401-49a9-801e-67d30e2d68a0'
+  label: 'Header - Contact Section'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

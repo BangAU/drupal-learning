@@ -1,6 +1,6 @@
 uuid: 0f00849d-87e5-4f6a-a833-6dd69136291d
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:social_links:2743d70b-ee37-44e3-ab1f-b385538c7267'
@@ -10,8 +10,8 @@ dependencies:
     - bang
 id: sociallinks
 theme: bang
-region: header
-weight: 0
+region: header_top
+weight: -3
 provider: null
 plugin: 'block_content:2743d70b-ee37-44e3-ab1f-b385538c7267'
 settings:

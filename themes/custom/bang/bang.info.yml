@@ -8,7 +8,8 @@ package: Core
 libraries:
   - bang/global-styling
 regions:
-  header: Header
+  header_top: Header-Top
+  header_bottom: Header-Bottom
   content: Content
   sidebar: Sidebar
   bottom_panel: Bottom Panel

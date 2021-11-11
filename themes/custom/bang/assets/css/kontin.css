@@ -385,6 +385,11 @@ ul {
     color: var(--thm-primary);
 }
 
+.main-header__top-address li .icon span strong{
+    font-size: 0;
+}
+
+
 .main-header__top-address li .text {
     margin-left: 10px;
 }
