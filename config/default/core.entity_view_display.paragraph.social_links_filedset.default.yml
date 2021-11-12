@@ -1,0 +1,30 @@
+uuid: 07b4e0d4-5ad9-44a8-942d-db490898f097
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_links_filedset.field_social_icon_class_slf
+    - field.field.paragraph.social_links_filedset.field_social_icon_link_slf
+    - paragraphs.paragraphs_type.social_links_filedset
+id: paragraph.social_links_filedset.default
+targetEntityType: paragraph
+bundle: social_links_filedset
+mode: default
+content:
+  field_social_icon_class_slf:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_social_icon_link_slf:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,52 @@
+uuid: 1c7caef2-884b-494a-b317-c910aac370f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_links_filedset.field_social_icon_class_slf
+    - field.field.paragraph.social_links_filedset.field_social_icon_link_slf
+    - paragraphs.paragraphs_type.social_links_filedset
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_social_account:
+      children:
+        - field_social_icon_class_slf
+        - field_social_icon_link_slf
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Social Account'
+id: paragraph.social_links_filedset.default
+targetEntityType: paragraph
+bundle: social_links_filedset
+mode: default
+content:
+  field_social_icon_class_slf:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_social_icon_link_slf:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

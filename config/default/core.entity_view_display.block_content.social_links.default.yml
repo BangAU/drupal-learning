@@ -4,63 +4,21 @@ status: true
 dependencies:
   config:
     - block_content.type.social_links
-    - field.field.block_content.social_links.field_facebook
-    - field.field.block_content.social_links.field_instagram
-    - field.field.block_content.social_links.field_pinterest
-    - field.field.block_content.social_links.field_twitter
+    - field.field.block_content.social_links.field_social_accounts
   module:
-    - link
+    - entity_reference_revisions
 id: block_content.social_links.default
 targetEntityType: block_content
 bundle: social_links
 mode: default
 content:
-  field_facebook:
-    weight: 1
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_instagram:
-    weight: 3
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_pinterest:
-    weight: 2
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_twitter:
+  field_social_accounts:
+    type: entity_reference_revisions_entity_view
     weight: 0
     label: hidden
     settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    type: link
     region: content
 hidden: {  }
