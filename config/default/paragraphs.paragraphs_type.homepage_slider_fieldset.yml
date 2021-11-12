@@ -1,0 +1,10 @@
+uuid: e8a95b32-7465-4ec8-8433-91d11a18ef1e
+langcode: en
+status: true
+dependencies: {  }
+id: homepage_slider_fieldset
+label: 'Homepage - Slider Fieldset'
+icon_uuid: null
+icon_default: null
+description: 'Field set for Home page slider'
+behavior_plugins: {  }

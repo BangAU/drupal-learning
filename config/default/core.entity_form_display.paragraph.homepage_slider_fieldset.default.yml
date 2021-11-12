@@ -1,0 +1,23 @@
+uuid: 675135ef-d4ba-49da-8a9a-35089343ffeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.homepage_slider_fieldset.field_heading_hsf
+    - paragraphs.paragraphs_type.homepage_slider_fieldset
+id: paragraph.homepage_slider_fieldset.default
+targetEntityType: paragraph
+bundle: homepage_slider_fieldset
+mode: default
+content:
+  field_heading_hsf:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

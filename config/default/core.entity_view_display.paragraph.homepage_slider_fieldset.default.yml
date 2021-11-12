@@ -1,0 +1,21 @@
+uuid: f06946ed-4fda-47c0-b4db-7a46bc9e1838
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.homepage_slider_fieldset.field_heading_hsf
+    - paragraphs.paragraphs_type.homepage_slider_fieldset
+id: paragraph.homepage_slider_fieldset.default
+targetEntityType: paragraph
+bundle: homepage_slider_fieldset
+mode: default
+content:
+  field_heading_hsf:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
