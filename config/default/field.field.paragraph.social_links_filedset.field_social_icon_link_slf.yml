@@ -1,0 +1,19 @@
+uuid: b4f022c6-7bff-48d5-977d-dc9566cc696f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_social_icon_link_slf
+    - paragraphs.paragraphs_type.social_links_filedset
+id: paragraph.social_links_filedset.field_social_icon_link_slf
+field_name: field_social_icon_link_slf
+entity_type: paragraph
+bundle: social_links_filedset
+label: 'Social Icon Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: 9195de10-6931-453d-ad32-4d6f5411e254
+langcode: en
+status: true
+dependencies: {  }
+id: social_links_filedset
+label: 'Social Links - Filedset'
+icon_uuid: null
+icon_default: null
+description: 'Used to add social Links'
+behavior_plugins: {  }

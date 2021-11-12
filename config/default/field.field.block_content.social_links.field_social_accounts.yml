@@ -1,0 +1,37 @@
+uuid: 03149802-9841-40a1-88c6-94349e8b15fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_links
+    - field.storage.block_content.field_social_accounts
+    - paragraphs.paragraphs_type.social_links_filedset
+  module:
+    - entity_reference_revisions
+id: block_content.social_links.field_social_accounts
+field_name: field_social_accounts
+entity_type: block_content
+bundle: social_links
+label: 'Social Accounts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      social_links_filedset: social_links_filedset
+    target_bundles_drag_drop:
+      paragraphs_slider:
+        weight: 4
+        enabled: false
+      slider_fieldset:
+        weight: 5
+        enabled: false
+      social_links_filedset:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions
