@@ -1,9 +1,9 @@
-uuid: 62cb73f2-6f9b-4069-b27c-add685d19060
+uuid: e0eb9679-94f5-45e5-9826-13fc427438c6
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:social_links:59b28e07-314d-438e-a3c4-1d00c2ac10a8'
+    - 'block_content:social_links:2743d70b-ee37-44e3-ab1f-b385538c7267'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: bang
 region: header_top
 weight: 0
 provider: null
-plugin: 'block_content:59b28e07-314d-438e-a3c4-1d00c2ac10a8'
+plugin: 'block_content:2743d70b-ee37-44e3-ab1f-b385538c7267'
 settings:
-  id: 'block_content:59b28e07-314d-438e-a3c4-1d00c2ac10a8'
+  id: 'block_content:2743d70b-ee37-44e3-ab1f-b385538c7267'
   label: 'Social Media Links'
   provider: block_content
   label_display: '0'
