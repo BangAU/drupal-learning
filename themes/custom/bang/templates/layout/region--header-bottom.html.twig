@@ -14,15 +14,16 @@
 #}
 {%
   set classes = [
-    'main-header__top'
+    'main-menu',
+    'clearfix'
   ]
 %}
 {% if content %}
-  <div{{ attributes.addClass(classes) }}>
-    <div class="container">
-        <div class="main-header__top-inner clearfix">
+  <nav {{ attributes.addClass(classes) }}>
+    <div class="main-menu-wrapper clearfix">
+        <div class="container clearfix">
             {{ content }}
         </div>
     </div>
-  </div>
+  </nav>
 {% endif %}
