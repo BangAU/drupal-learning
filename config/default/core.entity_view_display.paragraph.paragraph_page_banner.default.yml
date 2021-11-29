@@ -1,0 +1,24 @@
+uuid: 0cdb1490-d743-47a6-8ed4-508583dd60b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_page_banner.field_add_view_pb
+    - paragraphs.paragraphs_type.paragraph_page_banner
+  module:
+    - viewsreference
+id: paragraph.paragraph_page_banner.default
+targetEntityType: paragraph
+bundle: paragraph_page_banner
+mode: default
+content:
+  field_add_view_pb:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden: {  }

@@ -1,0 +1,10 @@
+uuid: f63605a9-0af9-4691-a035-705a43622567
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_page_banner
+label: 'Paragraph - Page Banner'
+icon_uuid: null
+icon_default: null
+description: 'This is used to add the banner to the page'
+behavior_plugins: {  }

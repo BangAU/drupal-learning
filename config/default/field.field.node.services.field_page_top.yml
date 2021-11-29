@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_page_top
     - node.type.services
+    - paragraphs.paragraphs_type.paragraph_page_banner
   module:
     - entity_reference_revisions
 id: node.services.field_page_top
@@ -21,7 +22,8 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     negate: 0
-    target_bundles: null
+    target_bundles:
+      paragraph_page_banner: paragraph_page_banner
     target_bundles_drag_drop:
       footer_contact_fieldset:
         weight: 15
@@ -47,6 +49,9 @@ settings:
       paragraph_image_and_listing_mod:
         weight: 25
         enabled: false
+      paragraph_page_banner:
+        enabled: true
+        weight: 24
       paragraphs_services_accordion:
         weight: 22
         enabled: false
