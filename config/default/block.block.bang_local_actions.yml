@@ -9,7 +9,7 @@ _core:
 id: bang_local_actions
 theme: bang
 region: content
-weight: -7
+weight: -9
 provider: null
 plugin: local_actions_block
 settings:

@@ -11,7 +11,7 @@ dependencies:
 id: socialmedialinks_footer
 theme: bang
 region: header_top
-weight: 0
+weight: -4
 provider: null
 plugin: 'block_content:2743d70b-ee37-44e3-ab1f-b385538c7267'
 settings:

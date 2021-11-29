@@ -9,7 +9,7 @@ _core:
 id: bang_page_title
 theme: bang
 region: content
-weight: -10
+weight: -7
 provider: null
 plugin: page_title_block
 settings:

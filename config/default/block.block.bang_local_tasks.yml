@@ -1,6 +1,6 @@
 uuid: 49abaab6-dc7e-4801-a3b8-acde01e0583a
 langcode: en
-status: false
+status: true
 dependencies:
   theme:
     - bang
@@ -9,7 +9,7 @@ _core:
 id: bang_local_tasks
 theme: bang
 region: content
-weight: -9
+weight: -11
 provider: null
 plugin: local_tasks_block
 settings:

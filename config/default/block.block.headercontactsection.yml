@@ -11,7 +11,7 @@ dependencies:
 id: headercontactsection
 theme: bang
 region: header_top
-weight: 0
+weight: -12
 provider: null
 plugin: 'block_content:864c5f43-b266-43a9-9d14-807f8bcb925e'
 settings:
