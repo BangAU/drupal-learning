@@ -5,7 +5,10 @@ dependencies:
   config:
     - field.field.node.services.field_body_content
     - field.field.node.services.field_hero_image
+    - field.field.node.services.field_main_heading
     - field.field.node.services.field_overview_image
+    - field.field.node.services.field_page_sidebar
+    - field.field.node.services.field_page_top
     - field.field.node.services.field_services_overview_ss
     - image.style.thumbnail
     - node.type.services
@@ -16,66 +19,10 @@ dependencies:
     - path
 third_party_settings:
   field_group:
-    group_cta_field_group:
-      children: {  }
-      parent_name: ''
-      weight: 11
-      format_type: details
-      region: content
-      format_settings:
-        show_empty_fields: false
-        id: ''
-        classes: ''
-        description: ''
-        open: false
-        required_fields: true
-      label: 'CTA Field Group'
-    group_our_benefits_field_group:
-      children: {  }
-      parent_name: ''
-      weight: 12
-      format_type: details
-      region: content
-      format_settings:
-        show_empty_fields: false
-        id: ''
-        classes: ''
-        description: ''
-        open: false
-        required_fields: true
-      label: 'Our Benefits Field Group'
-    group_image_field_group:
-      children: {  }
-      parent_name: ''
-      weight: 10
-      format_type: details
-      region: content
-      format_settings:
-        show_empty_fields: false
-        id: ''
-        classes: ''
-        description: ''
-        open: false
-        required_fields: true
-      label: 'Image Field Group'
-    group_accordion_field_group:
-      children: {  }
-      parent_name: ''
-      weight: 13
-      format_type: details
-      region: content
-      format_settings:
-        show_empty_fields: false
-        id: ''
-        classes: ''
-        description: ''
-        open: false
-        required_fields: true
-      label: 'Accordion Field Group'
     group_breadcrumb:
       children: {  }
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: details
       region: content
       format_settings:
@@ -88,7 +35,6 @@ third_party_settings:
       label: breadcrumb
     group_page_body:
       children:
-        - group_overview_fields
         - field_body_content
       parent_name: ''
       weight: 2
@@ -105,7 +51,9 @@ third_party_settings:
     group_page_head_sfg:
       children:
         - title
+        - field_main_heading
         - field_hero_image
+        - group_overview_fields
       parent_name: ''
       weight: 0
       format_type: details
@@ -118,26 +66,12 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'PAGE HEAD'
-    group_overview:
-      children: {  }
-      parent_name: ''
-      weight: 14
-      format_type: details
-      region: hidden
-      format_settings:
-        show_empty_fields: false
-        id: ''
-        classes: ''
-        description: ''
-        open: false
-        required_fields: true
-      label: Overview
     group_overview_fields:
       children:
         - field_overview_image
         - field_services_overview_ss
-      parent_name: group_page_body
-      weight: 30
+      parent_name: group_page_head_sfg
+      weight: 36
       format_type: details
       region: content
       format_settings:
@@ -148,6 +82,36 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Overview Fields'
+    group_page_banner:
+      children:
+        - field_page_top
+      parent_name: ''
+      weight: 1
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Page - Banner'
+    group_page_sidebar:
+      children:
+        - field_page_sidebar
+      parent_name: ''
+      weight: 3
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Page Sidebar'
 id: node.services.default
 targetEntityType: node
 bundle: services
@@ -155,7 +119,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -178,12 +142,20 @@ content:
     third_party_settings: {  }
     region: content
   field_hero_image:
-    weight: 15
+    weight: 35
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_main_heading:
+    weight: 34
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_overview_image:
     weight: 28
@@ -192,6 +164,30 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_page_sidebar:
+    type: entity_reference_paragraphs
+    weight: 10
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_page_top:
+    type: entity_reference_paragraphs
+    weight: 9
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   field_services_overview_ss:
     weight: 29
@@ -203,7 +199,7 @@ content:
     region: content
   path:
     type: path
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -211,26 +207,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 10
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 13
+    weight: 33
     region: content
     settings:
       size: 60
@@ -238,7 +234,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60

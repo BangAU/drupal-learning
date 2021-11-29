@@ -5,7 +5,10 @@ dependencies:
   config:
     - field.field.node.services.field_body_content
     - field.field.node.services.field_hero_image
+    - field.field.node.services.field_main_heading
     - field.field.node.services.field_overview_image
+    - field.field.node.services.field_page_sidebar
+    - field.field.node.services.field_page_top
     - field.field.node.services.field_services_overview_ss
     - node.type.services
   module:
@@ -35,6 +38,14 @@ content:
     third_party_settings: {  }
     type: image
     region: content
+  field_main_heading:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_overview_image:
     weight: 106
     label: hidden
@@ -43,6 +54,24 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_page_sidebar:
+    type: entity_reference_revisions_entity_view
+    weight: 109
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_page_top:
+    type: entity_reference_revisions_entity_view
+    weight: 108
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   field_services_overview_ss:
     weight: 105

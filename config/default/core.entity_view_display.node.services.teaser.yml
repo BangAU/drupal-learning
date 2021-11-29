@@ -6,7 +6,10 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.services.field_body_content
     - field.field.node.services.field_hero_image
+    - field.field.node.services.field_main_heading
     - field.field.node.services.field_overview_image
+    - field.field.node.services.field_page_sidebar
+    - field.field.node.services.field_page_top
     - field.field.node.services.field_services_overview_ss
     - node.type.services
   module:
@@ -24,5 +27,8 @@ content:
 hidden:
   field_body_content: true
   field_hero_image: true
+  field_main_heading: true
   field_overview_image: true
+  field_page_sidebar: true
+  field_page_top: true
   field_services_overview_ss: true
