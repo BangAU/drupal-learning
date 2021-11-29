@@ -1,0 +1,35 @@
+uuid: 3a59a494-2fdd-41f3-b053-7fa87914fbc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contact
+    - field.field.block_content.footer_contact.field_footer_contact_fc
+  module:
+    - paragraphs
+id: block_content.footer_contact.default
+targetEntityType: block_content
+bundle: footer_contact
+mode: default
+content:
+  field_footer_contact_fc:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

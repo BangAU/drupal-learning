@@ -1,0 +1,70 @@
+uuid: a2c56205-7685-42a5-89c8-15029292a472
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_and_listing_module_l
+    - paragraphs.paragraphs_type.image_and_listing_module_fieldse
+    - paragraphs.paragraphs_type.paragraph_image_and_listing_mod
+  module:
+    - entity_reference_revisions
+id: paragraph.paragraph_image_and_listing_mod.field_image_and_listing_module_l
+field_name: field_image_and_listing_module_l
+entity_type: paragraph
+bundle: paragraph_image_and_listing_mod
+label: 'Paragraph - Listing Module'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_and_listing_module_fieldse: image_and_listing_module_fieldse
+    target_bundles_drag_drop:
+      footer_contact_fieldset:
+        weight: 15
+        enabled: false
+      header_block:
+        weight: 16
+        enabled: false
+      homepage_about_us_module:
+        weight: 17
+        enabled: false
+      homepage_service_fieldset:
+        weight: 18
+        enabled: false
+      homepage_slider:
+        weight: 19
+        enabled: false
+      homepage_slider_fieldset:
+        weight: 20
+        enabled: false
+      image_and_listing_module_fieldse:
+        enabled: true
+        weight: 21
+      list_item_fieldset:
+        weight: 22
+        enabled: false
+      paragraph_image_and_listing_mod:
+        weight: 23
+        enabled: false
+      paragraphs_services_content_area:
+        weight: 24
+        enabled: false
+      service_accordion_fieldset:
+        weight: 25
+        enabled: false
+      service_featured_block_list_fiel:
+        weight: 26
+        enabled: false
+      services_featured_image:
+        weight: 27
+        enabled: false
+      social_links_filedset:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

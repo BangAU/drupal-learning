@@ -1,18 +1,61 @@
-uuid: f06946ed-4fda-47c0-b4db-7a46bc9e1838
+uuid: 68519e12-012a-47d5-aa47-baa05804507c
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.homepage_slider_fieldset.field_heading_hsf
+    - field.field.paragraph.homepage_slider_fieldset.field_links_hsf
+    - field.field.paragraph.homepage_slider_fieldset.field_slider_image_hsf
+    - field.field.paragraph.homepage_slider_fieldset.field_styled_text_hsf
+    - field.field.paragraph.homepage_slider_fieldset.field_sub_heading_hsf
     - paragraphs.paragraphs_type.homepage_slider_fieldset
+  module:
+    - image
+    - link
+    - text
 id: paragraph.homepage_slider_fieldset.default
 targetEntityType: paragraph
 bundle: homepage_slider_fieldset
 mode: default
 content:
   field_heading_hsf:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_links_hsf:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_slider_image_hsf:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  field_styled_text_hsf:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sub_heading_hsf:
     weight: 0
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

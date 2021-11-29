@@ -1,6 +1,6 @@
 uuid: 96fb33b8-e6cb-40e1-ac42-47c71a12ac21
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -10,7 +10,7 @@ dependencies:
     - bang
 id: footer
 theme: bang
-region: footer
+region: header_top
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

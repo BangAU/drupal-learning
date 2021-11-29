@@ -1,0 +1,19 @@
+uuid: e829134d-d18c-4e06-80a2-a24f270016ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_blurb_psca
+field_name: field_blurb_psca
+entity_type: paragraph
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: e2679545-a0e3-4f88-bdf8-79672db11e28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_signature_text_haum
+    - paragraphs.paragraphs_type.homepage_about_us_module
+id: paragraph.homepage_about_us_module.field_signature_text_haum
+field_name: field_signature_text_haum
+entity_type: paragraph
+bundle: homepage_about_us_module
+label: 'signature text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

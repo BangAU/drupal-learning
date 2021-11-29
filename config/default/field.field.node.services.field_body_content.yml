@@ -1,0 +1,82 @@
+uuid: 1c2928c4-7a70-4f01-b6ec-a14d426d2f74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_content
+    - node.type.services
+    - paragraphs.paragraphs_type.paragraph_image_and_listing_mod
+    - paragraphs.paragraphs_type.paragraphs_services_accordion
+    - paragraphs.paragraphs_type.paragraphs_services_content_area
+    - paragraphs.paragraphs_type.services_featured_image
+  module:
+    - entity_reference_revisions
+id: node.services.field_body_content
+field_name: field_body_content
+entity_type: node
+bundle: services
+label: 'Body Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      services_featured_image: services_featured_image
+      paragraphs_services_content_area: paragraphs_services_content_area
+      paragraph_image_and_listing_mod: paragraph_image_and_listing_mod
+      paragraphs_services_accordion: paragraphs_services_accordion
+    target_bundles_drag_drop:
+      footer_contact_fieldset:
+        weight: 12
+        enabled: false
+      header_block:
+        weight: 13
+        enabled: false
+      homepage_about_us_module:
+        weight: 14
+        enabled: false
+      homepage_service_fieldset:
+        weight: 15
+        enabled: false
+      homepage_slider:
+        weight: 16
+        enabled: false
+      homepage_slider_fieldset:
+        weight: 17
+        enabled: false
+      image_and_listing_module_fieldse:
+        weight: 21
+        enabled: false
+      list_item_fieldset:
+        weight: 18
+        enabled: false
+      paragraph_image_and_listing_mod:
+        enabled: true
+        weight: 23
+      paragraphs_services_accordion:
+        enabled: true
+        weight: 26
+      paragraphs_services_accordion_fi:
+        weight: 27
+        enabled: false
+      paragraphs_services_content_area:
+        enabled: true
+        weight: 20
+      service_accordion_fieldset:
+        weight: 20
+        enabled: false
+      service_featured_block_list_fiel:
+        weight: 21
+        enabled: false
+      services_featured_image:
+        enabled: true
+        weight: 19
+      social_links_filedset:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

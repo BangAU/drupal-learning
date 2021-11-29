@@ -1,0 +1,21 @@
+uuid: e444eeb3-6baa-4111-9e49-489d4b4d1e0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_details_type_fcf
+    - paragraphs.paragraphs_type.footer_contact_fieldset
+  module:
+    - options
+id: paragraph.footer_contact_fieldset.field_details_type_fcf
+field_name: field_details_type_fcf
+entity_type: paragraph
+bundle: footer_contact_fieldset
+label: 'Details Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

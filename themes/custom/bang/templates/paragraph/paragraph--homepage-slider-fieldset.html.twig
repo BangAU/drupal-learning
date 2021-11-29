@@ -1,0 +1,22 @@
+<div class="swiper-slide">
+    <div class="image-layer" style="background-image: url({{content.field_slider_image_hsf|field_value}});"></div>
+    <div class="image-layer-overlay"></div>
+    <!-- /.image-layer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main-slider__content">
+                    <h2>{{content.field_heading_hsf|field_value }}</h2>
+                    <p>{{content.field_sub_heading_hsf|field_value}}</p>
+                  
+                    <a href="{{ content.field_links_hsf[0]['#url']|render }}" class="btn-style-one">
+                        <i class="btn-curve"></i>
+                        <span class="btn-title"> {{ content.field_links_hsf[0]['#title']|render }}</span>
+                    </a>
+                 
+                    <div class="main-slider__side-text">{{content.field_styled_text_hsf|field_value}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

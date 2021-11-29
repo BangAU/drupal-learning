@@ -1,0 +1,53 @@
+uuid: e65f2574-c600-48bb-80ee-28b222a03135
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.homepage_slider.field_homepage_slider_block
+    - paragraphs.paragraphs_type.homepage_slider
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_slider_fields:
+      children:
+        - field_homepage_slider_block
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Slider fields'
+id: paragraph.homepage_slider.default
+targetEntityType: paragraph
+bundle: homepage_slider
+mode: default
+content:
+  field_homepage_slider_block:
+    type: paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

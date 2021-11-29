@@ -1,0 +1,52 @@
+uuid: 1c57da98-e24b-4c50-b581-7e506c9c273f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_image_and_listing_mod.field_blurb_pialm
+    - field.field.paragraph.paragraph_image_and_listing_mod.field_heading_pialm
+    - field.field.paragraph.paragraph_image_and_listing_mod.field_image_and_listing_module_l
+    - field.field.paragraph.paragraph_image_and_listing_mod.field_image_pialm
+    - paragraphs.paragraphs_type.paragraph_image_and_listing_mod
+  module:
+    - entity_reference_revisions
+    - image
+id: paragraph.paragraph_image_and_listing_mod.default
+targetEntityType: paragraph
+bundle: paragraph_image_and_listing_mod
+mode: default
+content:
+  field_blurb_pialm:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_heading_pialm:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image_and_listing_module_l:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_image_pialm:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

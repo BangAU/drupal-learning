@@ -1,0 +1,53 @@
+uuid: d360aee8-f888-4999-b514-97977d179f98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_body_lp
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.homepage_about_us_module
+    - paragraphs.paragraphs_type.homepage_service_fieldset
+    - paragraphs.paragraphs_type.homepage_slider
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_page_body_lp
+field_name: field_page_body_lp
+entity_type: node
+bundle: landing_page
+label: 'PAGE BODY'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      homepage_slider: homepage_slider
+      homepage_about_us_module: homepage_about_us_module
+      homepage_service_fieldset: homepage_service_fieldset
+    target_bundles_drag_drop:
+      footer_contact_fieldset:
+        weight: 5
+        enabled: false
+      homepage_about_us_module:
+        enabled: true
+        weight: 8
+      homepage_service_fieldset:
+        enabled: true
+        weight: 10
+      homepage_slider:
+        enabled: true
+        weight: 6
+      homepage_slider_fieldset:
+        weight: 7
+        enabled: false
+      list_item_fieldset:
+        weight: 11
+        enabled: false
+      social_links_filedset:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

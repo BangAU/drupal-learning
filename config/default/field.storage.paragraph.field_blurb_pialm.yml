@@ -1,0 +1,19 @@
+uuid: f05cc2ca-2af5-4b5a-9ec7-05f8e6d92b35
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_blurb_pialm
+field_name: field_blurb_pialm
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

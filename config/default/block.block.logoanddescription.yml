@@ -1,0 +1,25 @@
+uuid: 5fa6b86c-b0cc-4996-936f-dfc255629b8a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:462a70c5-b243-4719-bff1-a14f75e9de0a'
+  module:
+    - block_content
+  theme:
+    - bang
+id: logoanddescription
+theme: bang
+region: footer_top_left
+weight: 0
+provider: null
+plugin: 'block_content:462a70c5-b243-4719-bff1-a14f75e9de0a'
+settings:
+  id: 'block_content:462a70c5-b243-4719-bff1-a14f75e9de0a'
+  label: 'Logo and description'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

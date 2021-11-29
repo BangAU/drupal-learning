@@ -1,0 +1,19 @@
+uuid: f632e3f1-b86d-44dc-aa6e-073ca8258b65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_heading_hsf
+    - paragraphs.paragraphs_type.homepage_slider_fieldset
+id: paragraph.homepage_slider_fieldset.field_sub_heading_hsf
+field_name: field_sub_heading_hsf
+entity_type: paragraph
+bundle: homepage_slider_fieldset
+label: 'Sub Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

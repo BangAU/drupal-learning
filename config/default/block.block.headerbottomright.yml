@@ -1,0 +1,25 @@
+uuid: 5e76e718-060c-4eeb-83a4-50cadc317c75
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:9770eea3-3154-4cd6-bfda-859d742c9b61'
+  module:
+    - block_content
+  theme:
+    - bang
+id: headerbottomright
+theme: bang
+region: header_bottom
+weight: 0
+provider: null
+plugin: 'block_content:9770eea3-3154-4cd6-bfda-859d742c9b61'
+settings:
+  id: 'block_content:9770eea3-3154-4cd6-bfda-859d742c9b61'
+  label: 'Header Bottom Right'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

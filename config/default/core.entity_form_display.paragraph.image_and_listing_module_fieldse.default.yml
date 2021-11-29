@@ -1,0 +1,42 @@
+uuid: cef39e59-52cb-46ff-bdfe-2d0cad1aab41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_and_listing_module_fieldse.field_item_iamf
+    - paragraphs.paragraphs_type.image_and_listing_module_fieldse
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_list_item_field:
+      children:
+        - field_item_iamf
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'List item field'
+id: paragraph.image_and_listing_module_fieldse.default
+targetEntityType: paragraph
+bundle: image_and_listing_module_fieldse
+mode: default
+content:
+  field_item_iamf:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

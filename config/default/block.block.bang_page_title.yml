@@ -1,6 +1,6 @@
 uuid: 93630f7f-d365-4859-b951-c1a5d2849b5b
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - bang
@@ -9,7 +9,7 @@ _core:
 id: bang_page_title
 theme: bang
 region: content
-weight: -50
+weight: -10
 provider: null
 plugin: page_title_block
 settings:

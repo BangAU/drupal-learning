@@ -1,0 +1,29 @@
+uuid: 70139f05-4ea9-436c-8f1a-85d88768eef7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraphs_services_accordion_fi.field_blurb_psaf
+    - field.field.paragraph.paragraphs_services_accordion_fi.field_heading_psaf
+    - paragraphs.paragraphs_type.paragraphs_services_accordion_fi
+id: paragraph.paragraphs_services_accordion_fi.default
+targetEntityType: paragraph
+bundle: paragraphs_services_accordion_fi
+mode: default
+content:
+  field_blurb_psaf:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_heading_psaf:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,10 @@
+uuid: cf09c6e8-3454-4cf9-a9d6-101501ebaef3
+langcode: en
+status: true
+dependencies: {  }
+id: list_item_fieldset
+label: 'List item - fieldset'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

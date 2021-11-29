@@ -1,0 +1,20 @@
+uuid: 319054b4-7d5f-4082-ac09-896fb19138ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_image_and_listing_module_l
+field_name: field_image_and_listing_module_l
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,55 @@
+uuid: 2aca208d-6e89-409f-b28a-437f4a8a4144
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraphs_services_content_area.field_blurb_psca
+    - field.field.paragraph.paragraphs_services_content_area.field_heading_psca
+    - paragraphs.paragraphs_type.paragraphs_services_content_area
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_content_area_fields:
+      children:
+        - field_heading_psca
+        - field_blurb_psca
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Content Area Fields'
+id: paragraph.paragraphs_services_content_area.default
+targetEntityType: paragraph
+bundle: paragraphs_services_content_area
+mode: default
+content:
+  field_blurb_psca:
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_heading_psca:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,183 @@
+uuid: ec625aee-407f-478a-b4c0-1196df726dbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.homepage_about_us_module.field_blurb_haum
+    - field.field.paragraph.homepage_about_us_module.field_colored_text_haum
+    - field.field.paragraph.homepage_about_us_module.field_counter_text_haum
+    - field.field.paragraph.homepage_about_us_module.field_heading_haum
+    - field.field.paragraph.homepage_about_us_module.field_image_one_haum
+    - field.field.paragraph.homepage_about_us_module.field_image_two_haum
+    - field.field.paragraph.homepage_about_us_module.field_list_item_haum
+    - field.field.paragraph.homepage_about_us_module.field_person_image_haum
+    - field.field.paragraph.homepage_about_us_module.field_signature_text_haum
+    - field.field.paragraph.homepage_about_us_module.field_sub_heading_haum
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.homepage_about_us_module
+  module:
+    - field_group
+    - image
+    - paragraphs
+    - text
+third_party_settings:
+  field_group:
+    group_images:
+      children:
+        - field_image_one_haum
+        - field_image_two_haum
+      parent_name: ''
+      weight: 7
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Images
+    group_signature:
+      children:
+        - field_person_image_haum
+        - field_signature_text_haum
+      parent_name: ''
+      weight: 8
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Signature
+    group_list_items:
+      children:
+        - field_list_item_haum
+      parent_name: group_about_module_fields
+      weight: 6
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'List Items'
+    group_about_module_fields:
+      children:
+        - field_sub_heading_haum
+        - field_heading_haum
+        - field_colored_text_haum
+        - field_blurb_haum
+        - field_counter_text_haum
+        - group_list_items
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'About Module fields'
+id: paragraph.homepage_about_us_module.default
+targetEntityType: paragraph
+bundle: homepage_about_us_module
+mode: default
+content:
+  field_blurb_haum:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_colored_text_haum:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_counter_text_haum:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_heading_haum:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_image_one_haum:
+    weight: 7
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_image_two_haum:
+    weight: 8
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_list_item_haum:
+    type: entity_reference_paragraphs
+    weight: 5
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_person_image_haum:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_signature_text_haum:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sub_heading_haum:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

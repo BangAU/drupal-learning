@@ -1,0 +1,19 @@
+uuid: 0e8085fe-f9dc-40b2-8ef6-6b4e92c1affb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_class
+    - paragraphs.paragraphs_type.footer_contact_fieldset
+id: paragraph.footer_contact_fieldset.field_icon_class
+field_name: field_icon_class
+entity_type: paragraph
+bundle: footer_contact_fieldset
+label: 'icon class'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

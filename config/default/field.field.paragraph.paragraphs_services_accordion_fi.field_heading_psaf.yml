@@ -1,0 +1,19 @@
+uuid: b83b80c3-3237-4788-8541-9316a52fd8df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_psaf
+    - paragraphs.paragraphs_type.paragraphs_services_accordion_fi
+id: paragraph.paragraphs_services_accordion_fi.field_heading_psaf
+field_name: field_heading_psaf
+entity_type: paragraph
+bundle: paragraphs_services_accordion_fi
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

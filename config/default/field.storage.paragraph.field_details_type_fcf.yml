@@ -1,0 +1,30 @@
+uuid: 78f2f107-0c83-4b36-a8e9-3c2e8dc9224e
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_details_type_fcf
+field_name: field_details_type_fcf
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: phone
+      label: Telephone
+    -
+      value: email
+      label: Email
+    -
+      value: address
+      label: Address
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

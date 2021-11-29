@@ -1,0 +1,21 @@
+uuid: c187426e-545e-473f-88e4-add4462f93e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - entity_reference_revisions
+    - paragraphs
+id: block_content.field_footer_contact_fc
+field_name: field_footer_contact_fc
+entity_type: block_content
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

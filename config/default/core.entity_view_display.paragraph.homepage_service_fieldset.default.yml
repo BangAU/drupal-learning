@@ -1,0 +1,42 @@
+uuid: 36d38bd0-e413-4638-9a06-1bba9b3d58fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.homepage_service_fieldset.field_heading_pthsf
+    - field.field.paragraph.homepage_service_fieldset.field_select_services_pthsf
+    - field.field.paragraph.homepage_service_fieldset.field_sub_heading_pthsf
+    - paragraphs.paragraphs_type.homepage_service_fieldset
+  module:
+    - viewsreference
+id: paragraph.homepage_service_fieldset.default
+targetEntityType: paragraph
+bundle: homepage_service_fieldset
+mode: default
+content:
+  field_heading_pthsf:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_select_services_pthsf:
+    weight: 2
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_sub_heading_pthsf:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

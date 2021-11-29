@@ -1,0 +1,10 @@
+uuid: 0c2eafe2-c6c2-4433-92b5-71761ef164c1
+langcode: en
+status: true
+dependencies: {  }
+id: homepage_about_us_module
+label: 'Homepage - About us module'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

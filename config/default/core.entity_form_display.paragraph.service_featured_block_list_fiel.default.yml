@@ -1,0 +1,23 @@
+uuid: d2adc78f-abba-4022-8dfb-518115863e5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.service_featured_block_list_fiel.field_list_items_featured_block
+    - paragraphs.paragraphs_type.service_featured_block_list_fiel
+id: paragraph.service_featured_block_list_fiel.default
+targetEntityType: paragraph
+bundle: service_featured_block_list_fiel
+mode: default
+content:
+  field_list_items_featured_block:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

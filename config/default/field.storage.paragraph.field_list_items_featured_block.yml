@@ -1,0 +1,21 @@
+uuid: b765b019-0c18-429b-94b3-00aa7377a3cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_list_items_featured_block
+field_name: field_list_items_featured_block
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,4 +1,4 @@
-uuid: e8a95b32-7465-4ec8-8433-91d11a18ef1e
+uuid: 7de42bdf-0b75-41bc-a973-b1608b9a21d9
 langcode: en
 status: true
 dependencies: {  }
@@ -6,5 +6,5 @@ id: homepage_slider_fieldset
 label: 'Homepage - Slider Fieldset'
 icon_uuid: null
 icon_default: null
-description: 'Field set for Home page slider'
+description: ''
 behavior_plugins: {  }

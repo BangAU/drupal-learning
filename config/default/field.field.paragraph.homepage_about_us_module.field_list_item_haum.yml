@@ -1,0 +1,46 @@
+uuid: 66a14374-edb9-4731-9ea6-785f94043cbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_item_haum
+    - paragraphs.paragraphs_type.homepage_about_us_module
+    - paragraphs.paragraphs_type.list_item_fieldset
+  module:
+    - entity_reference_revisions
+id: paragraph.homepage_about_us_module.field_list_item_haum
+field_name: field_list_item_haum
+entity_type: paragraph
+bundle: homepage_about_us_module
+label: 'List item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      list_item_fieldset: list_item_fieldset
+    target_bundles_drag_drop:
+      footer_contact_fieldset:
+        weight: 6
+        enabled: false
+      homepage_about_us_module:
+        weight: 7
+        enabled: false
+      homepage_slider:
+        weight: 8
+        enabled: false
+      homepage_slider_fieldset:
+        weight: 9
+        enabled: false
+      list_item_fieldset:
+        enabled: true
+        weight: 11
+      social_links_filedset:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

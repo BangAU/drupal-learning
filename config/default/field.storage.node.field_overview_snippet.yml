@@ -1,0 +1,19 @@
+uuid: 24b53171-f851-45dd-9c72-8776a3a526a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_overview_snippet
+field_name: field_overview_snippet
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

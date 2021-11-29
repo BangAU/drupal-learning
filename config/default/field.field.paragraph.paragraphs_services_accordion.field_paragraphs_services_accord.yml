@@ -1,0 +1,73 @@
+uuid: 957ad29a-5b68-44de-bbaf-16cefce7f705
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs_services_accord
+    - paragraphs.paragraphs_type.paragraphs_services_accordion
+    - paragraphs.paragraphs_type.paragraphs_services_accordion_fi
+  module:
+    - entity_reference_revisions
+id: paragraph.paragraphs_services_accordion.field_paragraphs_services_accord
+field_name: field_paragraphs_services_accord
+entity_type: paragraph
+bundle: paragraphs_services_accordion
+label: 'Paragraphs - Services Accordion'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      paragraphs_services_accordion_fi: paragraphs_services_accordion_fi
+    target_bundles_drag_drop:
+      footer_contact_fieldset:
+        weight: 17
+        enabled: false
+      header_block:
+        weight: 18
+        enabled: false
+      homepage_about_us_module:
+        weight: 19
+        enabled: false
+      homepage_service_fieldset:
+        weight: 20
+        enabled: false
+      homepage_slider:
+        weight: 21
+        enabled: false
+      homepage_slider_fieldset:
+        weight: 22
+        enabled: false
+      image_and_listing_module_fieldse:
+        weight: 23
+        enabled: false
+      list_item_fieldset:
+        weight: 24
+        enabled: false
+      paragraph_image_and_listing_mod:
+        weight: 25
+        enabled: false
+      paragraphs_services_accordion:
+        weight: 26
+        enabled: false
+      paragraphs_services_accordion_fi:
+        enabled: true
+        weight: 27
+      paragraphs_services_content_area:
+        weight: 28
+        enabled: false
+      service_featured_block_list_fiel:
+        weight: 30
+        enabled: false
+      services_featured_image:
+        weight: 31
+        enabled: false
+      social_links_filedset:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

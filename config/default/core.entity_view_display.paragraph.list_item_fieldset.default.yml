@@ -1,0 +1,21 @@
+uuid: 6f3c0319-0588-4cc4-a46d-1a05d88e798e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_item_fieldset.field_item_lif
+    - paragraphs.paragraphs_type.list_item_fieldset
+id: paragraph.list_item_fieldset.default
+targetEntityType: paragraph
+bundle: list_item_fieldset
+mode: default
+content:
+  field_item_lif:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

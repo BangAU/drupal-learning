@@ -6798,3 +6798,6 @@ ul {
     background-color: #f3f3f3;
     border-top: 0;
 }
+.main-menu-wrapper__call-icon span strong {
+    font-size: 0;
+}

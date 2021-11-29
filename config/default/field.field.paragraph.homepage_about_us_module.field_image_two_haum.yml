@@ -1,0 +1,38 @@
+uuid: fad0213d-badc-417a-a45c-e058f5f03798
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_two_haum
+    - paragraphs.paragraphs_type.homepage_about_us_module
+  module:
+    - image
+id: paragraph.homepage_about_us_module.field_image_two_haum
+field_name: field_image_two_haum
+entity_type: paragraph
+bundle: homepage_about_us_module
+label: 'Image two'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

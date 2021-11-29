@@ -1,0 +1,10 @@
+uuid: 878b6bee-78c3-4884-9bad-3dab5d63e3f9
+langcode: en
+status: true
+dependencies: {  }
+id: services_featured_image
+label: 'Paragraph - Services Featured Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

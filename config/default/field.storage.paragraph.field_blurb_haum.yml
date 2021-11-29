@@ -1,0 +1,19 @@
+uuid: 96161a0f-db83-4660-8fc9-3943919404de
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_blurb_haum
+field_name: field_blurb_haum
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

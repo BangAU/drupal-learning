@@ -1,17 +1,80 @@
-uuid: 675135ef-d4ba-49da-8a9a-35089343ffeb
+uuid: 4ed1ff36-0445-4220-ba59-c826fa7cfd03
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.homepage_slider_fieldset.field_heading_hsf
+    - field.field.paragraph.homepage_slider_fieldset.field_links_hsf
+    - field.field.paragraph.homepage_slider_fieldset.field_slider_image_hsf
+    - field.field.paragraph.homepage_slider_fieldset.field_styled_text_hsf
+    - field.field.paragraph.homepage_slider_fieldset.field_sub_heading_hsf
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.homepage_slider_fieldset
+  module:
+    - field_group
+    - image
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_slide:
+      children:
+        - field_heading_hsf
+        - field_sub_heading_hsf
+        - field_styled_text_hsf
+        - field_slider_image_hsf
+        - field_links_hsf
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Slide
 id: paragraph.homepage_slider_fieldset.default
 targetEntityType: paragraph
 bundle: homepage_slider_fieldset
 mode: default
 content:
   field_heading_hsf:
-    weight: 0
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_links_hsf:
+    weight: 15
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_slider_image_hsf:
+    weight: 14
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_styled_text_hsf:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sub_heading_hsf:
+    weight: 12
     settings:
       size: 60
       placeholder: ''

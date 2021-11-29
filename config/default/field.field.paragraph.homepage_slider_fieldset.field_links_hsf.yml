@@ -1,0 +1,23 @@
+uuid: 6865c79f-bf5b-40af-a0c7-15e320a97a4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_links_hsf
+    - paragraphs.paragraphs_type.homepage_slider_fieldset
+  module:
+    - link
+id: paragraph.homepage_slider_fieldset.field_links_hsf
+field_name: field_links_hsf
+entity_type: paragraph
+bundle: homepage_slider_fieldset
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

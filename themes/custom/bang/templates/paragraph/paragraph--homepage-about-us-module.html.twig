@@ -1,0 +1,51 @@
+  <!--Welcome One Start-->
+        <section class="welcome-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="welcome-one__left wow slideInLeft" data-wow-delay="100ms"
+                            data-wow-duration="2500ms">
+                            <div class="welcome-one__img-box">
+                                <div class="welcome-one__img">
+                                    <img src="{{ file_url(paragraph.field_image_one_haum.entity.uri.value) }}" alt="">
+                                </div>
+                                <div class="welcome-one__small-img">
+                                    <img src="{{ file_url(paragraph.field_image_two_haum.entity.uri.value) }}" alt="">
+                                </div>
+                                <div class="welcome-one__completed">
+                                    <div class="welcome-one__completed-icon">
+                                        <span class="icon-creative-design"></span>
+                                    </div>
+                                    <div class="welcome-one__completed-text">
+                                        <h6>{{content.field_counter_text_haum|field_value}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="welcome-one__right">
+                            <div class="section-title text-left">
+                                <span class="section-title__tagline">{{content.field_sub_heading_haum|field_value}}</span>
+                                <h2 class="section-title__title">{{content.field_heading_haum|field_value}}</h2>
+                            </div>
+                            <p class="welcome-one__right-text-1">{{content.field_colored_text_haum|field_value}}
+                            </p>
+                            <p class="welcome-one__right-text-2">{{content.field_blurb_haum|field_value}}</p>
+                                <ul class="list-unstyled welcome-one__list">
+                                     {{ content.field_list_item_haum|field_value }}
+                                </ul>
+                            <div class="welcome-one__person">
+                                <div class="welcome-one__person-img">
+                                    <img src="{{ file_url(paragraph.field_person_image_haum.entity.uri.value) }}" alt="">
+                                </div>
+                                <div class="welcome-one__person-sign">
+                                    <h3> {{ content.field_signature_text_haum|field_value }}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Welcome One End-->

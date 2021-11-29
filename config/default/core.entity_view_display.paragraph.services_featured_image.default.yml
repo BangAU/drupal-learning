@@ -1,0 +1,33 @@
+uuid: aa1d001e-46c1-40ab-8c42-ec8e1a1acec8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_featured_image.field_icon_class_sfi
+    - field.field.paragraph.services_featured_image.field_image_sfi
+    - paragraphs.paragraphs_type.services_featured_image
+  module:
+    - image
+id: paragraph.services_featured_image.default
+targetEntityType: paragraph
+bundle: services_featured_image
+mode: default
+content:
+  field_icon_class_sfi:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image_sfi:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

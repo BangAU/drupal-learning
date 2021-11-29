@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_page_body_hp
+    - field.field.node.page.field_page_body
     - node.type.page
   module:
     - field_group
@@ -39,9 +39,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_page_body_hp:
+  field_page_body:
     type: entity_reference_paragraphs
-    weight: 2
+    weight: 26
     settings:
       title: Paragraph
       title_plural: Paragraphs

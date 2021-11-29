@@ -1,0 +1,43 @@
+uuid: 49e32401-dc0c-475b-b343-6aa1ffdcea8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contact
+    - field.storage.block_content.field_footer_contact_fc
+    - paragraphs.paragraphs_type.footer_contact_fieldset
+  module:
+    - entity_reference_revisions
+id: block_content.footer_contact.field_footer_contact_fc
+field_name: field_footer_contact_fc
+entity_type: block_content
+bundle: footer_contact
+label: 'Footer contact'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      footer_contact_fieldset: footer_contact_fieldset
+    target_bundles_drag_drop:
+      footer_contact_fieldset:
+        enabled: true
+        weight: 6
+      homepage_slider_fieldset:
+        weight: 7
+        enabled: false
+      paragraphs_slider:
+        weight: 8
+        enabled: false
+      slider_fieldset:
+        weight: 9
+        enabled: false
+      social_links_filedset:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

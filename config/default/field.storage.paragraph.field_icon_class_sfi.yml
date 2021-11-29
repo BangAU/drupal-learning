@@ -1,0 +1,21 @@
+uuid: 04886019-c2f7-45bb-bc3f-895fc143d16b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_icon_class_sfi
+field_name: field_icon_class_sfi
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.projects.body
+    - field.field.node.projects.field_overview_snippet
     - node.type.projects
   module:
     - text
@@ -19,6 +20,13 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_overview_snippet:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   links:
     weight: 100

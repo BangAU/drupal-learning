@@ -1,0 +1,21 @@
+uuid: 102b0ce6-795e-48ab-a23e-1cc168c2f1e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.service_featured_block_list_fiel.field_list_items_featured_block
+    - paragraphs.paragraphs_type.service_featured_block_list_fiel
+id: paragraph.service_featured_block_list_fiel.default
+targetEntityType: paragraph
+bundle: service_featured_block_list_fiel
+mode: default
+content:
+  field_list_items_featured_block:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

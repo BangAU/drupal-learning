@@ -1,0 +1,19 @@
+uuid: bc49dfb8-8e0e-4d33-8329-12286994a3d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_services_overview_ss
+    - node.type.services
+id: node.services.field_services_overview_ss
+field_name: field_services_overview_ss
+entity_type: node
+bundle: services
+label: 'Overview Snippet'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

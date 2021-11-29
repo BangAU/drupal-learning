@@ -1,0 +1,23 @@
+uuid: ea33ad19-a4bb-47d8-82af-e6939b72cb7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_item_fieldset.field_item_lif
+    - paragraphs.paragraphs_type.list_item_fieldset
+id: paragraph.list_item_fieldset.default
+targetEntityType: paragraph
+bundle: list_item_fieldset
+mode: default
+content:
+  field_item_lif:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

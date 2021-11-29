@@ -1,0 +1,10 @@
+uuid: 0f64819f-e5ac-41c3-ab35-453763752045
+langcode: en
+status: true
+dependencies: {  }
+id: service_featured_block_list_fiel
+label: 'Service Featured Block List fieldset'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

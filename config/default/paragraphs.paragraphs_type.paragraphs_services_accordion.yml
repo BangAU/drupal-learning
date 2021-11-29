@@ -1,0 +1,10 @@
+uuid: f3ab5a8c-a32e-4827-b626-c946beb4ce43
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphs_services_accordion
+label: 'Paragraphs - Services Accordion'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

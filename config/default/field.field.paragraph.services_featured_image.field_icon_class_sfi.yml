@@ -1,0 +1,19 @@
+uuid: f6dbca85-ae09-40c4-98d5-cc6e3712fbf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_class_sfi
+    - paragraphs.paragraphs_type.services_featured_image
+id: paragraph.services_featured_image.field_icon_class_sfi
+field_name: field_icon_class_sfi
+entity_type: paragraph
+bundle: services_featured_image
+label: 'Icon Class'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

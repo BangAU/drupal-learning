@@ -1,0 +1,19 @@
+uuid: d95676a9-72d2-4413-9d11-27dbaa96c603
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colored_text_haum
+    - paragraphs.paragraphs_type.homepage_about_us_module
+id: paragraph.homepage_about_us_module.field_colored_text_haum
+field_name: field_colored_text_haum
+entity_type: paragraph
+bundle: homepage_about_us_module
+label: 'Colored Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

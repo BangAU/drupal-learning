@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+
+{% if content %}
+    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp animated" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+        <div class="footer-widget__column footer-widget__about">
+            {{ content }}
+        </div>
+    </div>
+{% endif %}

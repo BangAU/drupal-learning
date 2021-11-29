@@ -1,0 +1,39 @@
+uuid: c5f41e49-3805-4600-9af7-c1c741b351e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.footer_contact_fieldset.field_details_type_fcf
+    - field.field.paragraph.footer_contact_fieldset.field_icon_class
+    - field.field.paragraph.footer_contact_fieldset.field_icon_text_fcf
+    - paragraphs.paragraphs_type.footer_contact_fieldset
+  module:
+    - options
+id: paragraph.footer_contact_fieldset.default
+targetEntityType: paragraph
+bundle: footer_contact_fieldset
+mode: default
+content:
+  field_details_type_fcf:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_icon_class:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_icon_text_fcf:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

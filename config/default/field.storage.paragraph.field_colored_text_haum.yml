@@ -1,0 +1,21 @@
+uuid: 7308b36e-01fd-4c85-b512-775a3e1c9a6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_colored_text_haum
+field_name: field_colored_text_haum
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: 258d2700-6aee-4d2e-a029-ce5470e196af
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphs_services_content_area
+label: 'Paragraphs - Services Content Area'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

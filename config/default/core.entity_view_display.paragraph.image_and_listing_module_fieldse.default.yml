@@ -1,0 +1,21 @@
+uuid: dbe98326-7409-4b9b-bed9-fe94b36e397d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_and_listing_module_fieldse.field_item_iamf
+    - paragraphs.paragraphs_type.image_and_listing_module_fieldse
+id: paragraph.image_and_listing_module_fieldse.default
+targetEntityType: paragraph
+bundle: image_and_listing_module_fieldse
+mode: default
+content:
+  field_item_iamf:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

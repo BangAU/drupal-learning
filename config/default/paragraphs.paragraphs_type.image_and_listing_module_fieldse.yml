@@ -1,0 +1,10 @@
+uuid: 6bac3148-ef93-450b-904c-1c2bb59048e4
+langcode: en
+status: true
+dependencies: {  }
+id: image_and_listing_module_fieldse
+label: 'Paragraph - Listing Module Fieldset'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

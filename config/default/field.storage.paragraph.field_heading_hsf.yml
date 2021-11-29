@@ -1,18 +1,17 @@
-uuid: 486f7bd2-4499-420b-baaf-51851b2e5ed4
+uuid: 18e4c076-dd2c-4f62-b6fb-c66a5e360791
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+    - text
 id: paragraph.field_heading_hsf
 field_name: field_heading_hsf
 entity_type: paragraph
-type: string
+type: text
 settings:
   max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+module: text
 locked: false
 cardinality: 1
 translatable: true

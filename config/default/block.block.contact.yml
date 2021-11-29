@@ -1,0 +1,25 @@
+uuid: 4c9a1e13-9096-4da8-829e-01c1a3f4c756
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_contact:f6bc79e3-0fea-464f-a83f-e0f128eeed04'
+  module:
+    - block_content
+  theme:
+    - bang
+id: contact
+theme: bang
+region: footer_top_right
+weight: -9
+provider: null
+plugin: 'block_content:f6bc79e3-0fea-464f-a83f-e0f128eeed04'
+settings:
+  id: 'block_content:f6bc79e3-0fea-464f-a83f-e0f128eeed04'
+  label: Contact
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

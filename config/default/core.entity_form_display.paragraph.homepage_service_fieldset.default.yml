@@ -1,0 +1,65 @@
+uuid: befb7dc4-e99e-4935-99ca-1f3a039b1402
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.homepage_service_fieldset.field_heading_pthsf
+    - field.field.paragraph.homepage_service_fieldset.field_select_services_pthsf
+    - field.field.paragraph.homepage_service_fieldset.field_sub_heading_pthsf
+    - paragraphs.paragraphs_type.homepage_service_fieldset
+  module:
+    - field_group
+    - viewsreference
+third_party_settings:
+  field_group:
+    group_home_service_fields:
+      children:
+        - field_sub_heading_pthsf
+        - field_heading_pthsf
+      parent_name: ''
+      weight: 0
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+        weight: 0
+      label: 'Home Service Fields'
+id: paragraph.homepage_service_fieldset.default
+targetEntityType: paragraph
+bundle: homepage_service_fieldset
+mode: default
+content:
+  field_heading_pthsf:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_select_services_pthsf:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+    region: content
+  field_sub_heading_pthsf:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,10 @@
+uuid: 6cb926b9-b7f0-46cd-80f6-a0c793b46e75
+langcode: en
+status: true
+dependencies: {  }
+id: footer_contact_fieldset
+label: 'Footer contact fieldset'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

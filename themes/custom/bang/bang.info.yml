@@ -13,6 +13,8 @@ regions:
   content: Content
   sidebar: Sidebar
   bottom_panel: Bottom Panel
-  footer: Footer
+  footer_top_left: Footer top left
+  footer_top_right: Footer top right
+  footer_bottom: Footer Bottom
 version: '8.3.6'
 project: 'drupal'

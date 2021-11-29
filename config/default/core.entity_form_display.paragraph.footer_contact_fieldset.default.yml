@@ -1,0 +1,60 @@
+uuid: 5779ef9a-7611-45bd-81d2-7a3fc5f4b682
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.footer_contact_fieldset.field_details_type_fcf
+    - field.field.paragraph.footer_contact_fieldset.field_icon_class
+    - field.field.paragraph.footer_contact_fieldset.field_icon_text_fcf
+    - paragraphs.paragraphs_type.footer_contact_fieldset
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_footer_contact:
+      children:
+        - field_details_type_fcf
+        - field_icon_class
+        - field_icon_text_fcf
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'footer contact'
+id: paragraph.footer_contact_fieldset.default
+targetEntityType: paragraph
+bundle: footer_contact_fieldset
+mode: default
+content:
+  field_details_type_fcf:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_icon_class:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_icon_text_fcf:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true

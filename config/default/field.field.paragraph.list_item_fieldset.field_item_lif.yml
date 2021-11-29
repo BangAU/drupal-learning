@@ -1,0 +1,19 @@
+uuid: 2d56f1ae-9bc3-43e8-bb5c-103f89dfa42e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_lif
+    - paragraphs.paragraphs_type.list_item_fieldset
+id: paragraph.list_item_fieldset.field_item_lif
+field_name: field_item_lif
+entity_type: paragraph
+bundle: list_item_fieldset
+label: Item
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

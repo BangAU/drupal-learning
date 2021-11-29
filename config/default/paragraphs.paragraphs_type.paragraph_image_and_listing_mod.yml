@@ -1,0 +1,10 @@
+uuid: b7f204d0-e850-45da-beba-b6d867b3621e
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_image_and_listing_mod
+label: 'Paragraph - Services Image and Listing module'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

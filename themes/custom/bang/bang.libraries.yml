@@ -29,7 +29,7 @@ global-styling:
       assets/css/kontin-responsive.css: {}
   js:
     
-    assets/vendors/jquery/jquery-3.6.0.min.js: {}
+    # assets/vendors/jquery/jquery-3.6.0.min.js: {}
     assets/vendors/bootstrap/js/bootstrap.bundle.min.js: {}
     assets/vendors/jarallax/jarallax.min.js: {}
     assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js: {}

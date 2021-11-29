@@ -1,0 +1,19 @@
+uuid: 21ae7f0d-fe3a-44f4-b6b6-e36fb0d8b351
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_pialm
+    - paragraphs.paragraphs_type.paragraph_image_and_listing_mod
+id: paragraph.paragraph_image_and_listing_mod.field_heading_pialm
+field_name: field_heading_pialm
+entity_type: paragraph
+bundle: paragraph_image_and_listing_mod
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

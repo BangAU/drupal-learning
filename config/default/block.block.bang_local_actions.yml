@@ -1,6 +1,6 @@
 uuid: b84bca64-fcc2-4693-b8ce-c8b12ddc2ffb
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - bang
@@ -9,7 +9,7 @@ _core:
 id: bang_local_actions
 theme: bang
 region: content
-weight: -20
+weight: -7
 provider: null
 plugin: local_actions_block
 settings:

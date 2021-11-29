@@ -1,0 +1,31 @@
+uuid: c0f58bf7-aa72-4c9b-a211-54db82678519
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraphs_services_content_area.field_blurb_psca
+    - field.field.paragraph.paragraphs_services_content_area.field_heading_psca
+    - paragraphs.paragraphs_type.paragraphs_services_content_area
+  module:
+    - text
+id: paragraph.paragraphs_services_content_area.default
+targetEntityType: paragraph
+bundle: paragraphs_services_content_area
+mode: default
+content:
+  field_blurb_psca:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_heading_psca:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

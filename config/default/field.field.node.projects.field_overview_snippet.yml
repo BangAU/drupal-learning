@@ -1,0 +1,19 @@
+uuid: cc666f56-fb1f-4b1f-8438-d6baa3633e4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_overview_snippet
+    - node.type.projects
+id: node.projects.field_overview_snippet
+field_name: field_overview_snippet
+entity_type: node
+bundle: projects
+label: 'Overview Snippet'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

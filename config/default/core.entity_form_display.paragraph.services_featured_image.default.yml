@@ -1,0 +1,54 @@
+uuid: 2b3ac821-6e6e-4f63-82e0-465555f80fb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_featured_image.field_icon_class_sfi
+    - field.field.paragraph.services_featured_image.field_image_sfi
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.services_featured_image
+  module:
+    - field_group
+    - image
+third_party_settings:
+  field_group:
+    group_featured_image_fields:
+      children:
+        - field_image_sfi
+        - field_icon_class_sfi
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Featured Image Fields'
+id: paragraph.services_featured_image.default
+targetEntityType: paragraph
+bundle: services_featured_image
+mode: default
+content:
+  field_icon_class_sfi:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_image_sfi:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true
