@@ -5,59 +5,24 @@
                     <ul class="tab-buttons clearfix list-unstyled">
                      {% for key, item in content.field_home if key|first != '#' %}
                          {% set counter = ( counter | default(0) ) + 1 %}
-                        <li data-tab="#{{ counter }}" class="tab-btn {% if loop.first %}active-btn{% endif %}"><span>{{ step.field_tab_heading_phtf.0.value|raw }}</span></li>
+                         {% set para_children =  item['#paragraph'] %}
+                        <li data-tab="#{{ counter }}" class="tab-btn {% if loop.first %}active-btn{% endif %}"><span>{{ para_children.field_tab_heading_phtf[0].value|raw }}</span></li>
                         {% endfor %}
                     </ul>
                     <div class="tabs-content">
                     {% for key, item in content.field_home if key|first != '#' %}
-                    {% set counter = ( counter | default(0) ) + 1 %}
+                        {% set counter = ( counter | default(0) ) + 1 %}
+                        {% set para_children =  item['#paragraph'] %}
+
                         <!--tab-->
                         <div class="tab {% if loop.first %}active-tab{% endif %}" id="{{ counter  }}">
                             <div class="tabs-content__inner">
                                 <div class="row">
-                                    <div class="col-xl-6 col-lg-6">
-                                        <div class="tabs-content__inner-left">
-                                            <div class="tabs-content__inner-img">
-                                                <img src="assets/images/resources/tabs-content-inner-img-2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6">
-                                        <div class="tabs-content__inner-right">
-                                            <p class="tabs-content__inner-right-text">The majority have suffered
-                                                alteration in some form humour or words which don't look even
-                                                believable. If you are going to use a of you need to be sure there isn't
-                                                anything.</p>
-                                            <ul class="list-unstyled tabs-content__inner-list">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-factory"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h4>We’re Building Better Products</h4>
-                                                        <p>We understands that customer satisfaction starts with
-                                                            arriving at your location on time</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span class="icon-customer-review"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h4>Effective Industrial Team Work</h4>
-                                                        <p>We understands that customer satisfaction starts with
-                                                            arriving at your location on time</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    {{ item }}
                                 </div>
                             </div>
                         </div>
-                    {% endfor %}
-                        <!--tab-->
-                      
+                    {% endfor %}                      
                     </div>
                 </div>
             </div>
