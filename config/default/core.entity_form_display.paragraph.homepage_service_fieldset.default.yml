@@ -3,22 +3,23 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.homepage_service_fieldset.field_heading_pthsf
+    - field.field.paragraph.homepage_service_fieldset.field_heading_hsfmf
     - field.field.paragraph.homepage_service_fieldset.field_select_services_pthsf
-    - field.field.paragraph.homepage_service_fieldset.field_sub_heading_pthsf
+    - field.field.paragraph.homepage_service_fieldset.field_sub_heding_hsfmf
     - paragraphs.paragraphs_type.homepage_service_fieldset
   module:
     - field_group
     - viewsreference
 third_party_settings:
   field_group:
-    group_home_service_fields:
+    group_home_page_services_fields:
       children:
-        - field_sub_heading_pthsf
-        - field_heading_pthsf
+        - field_sub_heding_hsfmf
+        - field_heading_hsfmf
+        - field_select_services_pthsf
       parent_name: ''
       weight: 0
-      format_type: details_sidebar
+      format_type: details
       region: content
       format_settings:
         show_empty_fields: false
@@ -27,14 +28,13 @@ third_party_settings:
         description: ''
         open: false
         required_fields: true
-        weight: 0
-      label: 'Home Service Fields'
+      label: 'Home Page Services Fields'
 id: paragraph.homepage_service_fieldset.default
 targetEntityType: paragraph
 bundle: homepage_service_fieldset
 mode: default
 content:
-  field_heading_pthsf:
+  field_heading_hsfmf:
     weight: 2
     settings:
       size: 60
@@ -52,7 +52,7 @@ content:
     third_party_settings: {  }
     type: viewsreference_autocomplete
     region: content
-  field_sub_heading_pthsf:
+  field_sub_heding_hsfmf:
     weight: 1
     settings:
       size: 60

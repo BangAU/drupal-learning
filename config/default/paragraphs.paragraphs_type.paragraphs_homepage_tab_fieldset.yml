@@ -1,0 +1,10 @@
+uuid: 3db71146-17ef-4299-b8ce-c822c4eb302e
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphs_homepage_tab_fieldset
+label: 'Paragraphs - Homepage Tab Fieldset'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,88 @@
+uuid: 6f38f951-177b-4d15-a627-4a4328faf54c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_items_phtf
+    - paragraphs.paragraphs_type.paragraph_tab_listing_fieldset
+    - paragraphs.paragraphs_type.paragraphs_homepage_tab_fieldset
+  module:
+    - entity_reference_revisions
+id: paragraph.paragraphs_homepage_tab_fieldset.field_list_items_phtf
+field_name: field_list_items_phtf
+entity_type: paragraph
+bundle: paragraphs_homepage_tab_fieldset
+label: 'List Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      paragraph_tab_listing_fieldset: paragraph_tab_listing_fieldset
+    target_bundles_drag_drop:
+      footer_contact_fieldset:
+        weight: 21
+        enabled: false
+      homepage_about_us_module:
+        weight: 22
+        enabled: false
+      homepage_service_fieldset:
+        weight: 23
+        enabled: false
+      homepage_slider:
+        weight: 24
+        enabled: false
+      homepage_slider_fieldset:
+        weight: 25
+        enabled: false
+      image_and_listing_module_fieldse:
+        weight: 26
+        enabled: false
+      list_item_fieldset:
+        weight: 27
+        enabled: false
+      paragraph_homepage_tab:
+        weight: 28
+        enabled: false
+      paragraph_image_and_listing_mod:
+        weight: 29
+        enabled: false
+      paragraph_page_banner:
+        weight: 30
+        enabled: false
+      paragraph_tab_listing_fieldset:
+        enabled: true
+        weight: 31
+      paragraphs_home_logo_slider:
+        weight: 32
+        enabled: false
+      paragraphs_home_logo_slider_fiel:
+        weight: 33
+        enabled: false
+      paragraphs_homepage_tab_fieldset:
+        weight: 34
+        enabled: false
+      paragraphs_services_accordion:
+        weight: 35
+        enabled: false
+      paragraphs_services_accordion_fi:
+        weight: 36
+        enabled: false
+      paragraphs_services_content_area:
+        weight: 37
+        enabled: false
+      service_featured_block_list_fiel:
+        weight: 38
+        enabled: false
+      services_featured_image:
+        weight: 39
+        enabled: false
+      social_links_filedset:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

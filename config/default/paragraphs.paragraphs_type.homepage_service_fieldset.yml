@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: homepage_service_fieldset
-label: 'Homepage - Service fieldset'
+label: 'Paragraph - Homepage Service'
 icon_uuid: null
 icon_default: null
 description: ''

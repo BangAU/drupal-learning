@@ -1,0 +1,38 @@
+uuid: b4ad348f-722c-477c-bddd-d2089605c35c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_logo_hlsf
+    - paragraphs.paragraphs_type.paragraphs_home_logo_slider_fiel
+  module:
+    - image
+id: paragraph.paragraphs_home_logo_slider_fiel.field_logo_hlsf
+field_name: field_logo_hlsf
+entity_type: paragraph
+bundle: paragraphs_home_logo_slider_fiel
+label: Logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,96 @@
+uuid: 73708a2e-a250-4742-93ed-aa5c5c1f5283
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_content
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.homepage_about_us_module
+    - paragraphs.paragraphs_type.homepage_service_fieldset
+    - paragraphs.paragraphs_type.homepage_slider
+    - paragraphs.paragraphs_type.paragraph_homepage_tab
+    - paragraphs.paragraphs_type.paragraphs_home_logo_slider
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_body_content
+field_name: field_body_content
+entity_type: node
+bundle: landing_page
+label: 'Body Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      homepage_about_us_module: homepage_about_us_module
+      homepage_service_fieldset: homepage_service_fieldset
+      homepage_slider: homepage_slider
+      paragraphs_home_logo_slider: paragraphs_home_logo_slider
+      paragraph_homepage_tab: paragraph_homepage_tab
+    target_bundles_drag_drop:
+      footer_contact_fieldset:
+        weight: 16
+        enabled: false
+      homepage_about_us_module:
+        enabled: true
+        weight: 17
+      homepage_service_fieldset:
+        enabled: true
+        weight: 18
+      homepage_slider:
+        enabled: true
+        weight: 19
+      homepage_slider_fieldset:
+        weight: 20
+        enabled: false
+      image_and_listing_module_fieldse:
+        weight: 21
+        enabled: false
+      list_item_fieldset:
+        weight: 22
+        enabled: false
+      paragraph_homepage_tab:
+        enabled: true
+        weight: 28
+      paragraph_image_and_listing_mod:
+        weight: 26
+        enabled: false
+      paragraph_page_banner:
+        weight: 27
+        enabled: false
+      paragraph_tab_listing_fieldset:
+        weight: 31
+        enabled: false
+      paragraphs_home_logo_slider:
+        enabled: true
+        weight: 27
+      paragraphs_home_logo_slider_fiel:
+        weight: 28
+        enabled: false
+      paragraphs_homepage_tab_fieldset:
+        weight: 34
+        enabled: false
+      paragraphs_services_accordion:
+        weight: 23
+        enabled: false
+      paragraphs_services_accordion_fi:
+        weight: 24
+        enabled: false
+      paragraphs_services_content_area:
+        weight: 25
+        enabled: false
+      service_featured_block_list_fiel:
+        weight: 29
+        enabled: false
+      services_featured_image:
+        weight: 28
+        enabled: false
+      social_links_filedset:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

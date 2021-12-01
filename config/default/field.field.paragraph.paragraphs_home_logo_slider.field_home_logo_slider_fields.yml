@@ -1,0 +1,79 @@
+uuid: 26e649e6-0cc2-4bfd-a16f-2b4f742cf8c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_home_logo_slider_fields
+    - paragraphs.paragraphs_type.paragraphs_home_logo_slider
+    - paragraphs.paragraphs_type.paragraphs_home_logo_slider_fiel
+  module:
+    - entity_reference_revisions
+id: paragraph.paragraphs_home_logo_slider.field_home_logo_slider_fields
+field_name: field_home_logo_slider_fields
+entity_type: paragraph
+bundle: paragraphs_home_logo_slider
+label: 'Home Logo Slider Fields'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      paragraphs_home_logo_slider_fiel: paragraphs_home_logo_slider_fiel
+    target_bundles_drag_drop:
+      footer_contact_fieldset:
+        weight: 18
+        enabled: false
+      homepage_about_us_module:
+        weight: 19
+        enabled: false
+      homepage_service_fieldset:
+        weight: 20
+        enabled: false
+      homepage_slider:
+        weight: 21
+        enabled: false
+      homepage_slider_fieldset:
+        weight: 22
+        enabled: false
+      image_and_listing_module_fieldse:
+        weight: 23
+        enabled: false
+      list_item_fieldset:
+        weight: 24
+        enabled: false
+      paragraph_image_and_listing_mod:
+        weight: 25
+        enabled: false
+      paragraph_page_banner:
+        weight: 26
+        enabled: false
+      paragraphs_home_logo_slider:
+        weight: 27
+        enabled: false
+      paragraphs_home_logo_slider_fiel:
+        enabled: true
+        weight: 28
+      paragraphs_services_accordion:
+        weight: 29
+        enabled: false
+      paragraphs_services_accordion_fi:
+        weight: 30
+        enabled: false
+      paragraphs_services_content_area:
+        weight: 31
+        enabled: false
+      service_featured_block_list_fiel:
+        weight: 32
+        enabled: false
+      services_featured_image:
+        weight: 33
+        enabled: false
+      social_links_filedset:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

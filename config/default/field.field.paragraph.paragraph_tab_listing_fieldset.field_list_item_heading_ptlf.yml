@@ -1,0 +1,19 @@
+uuid: 1a41d993-4d90-416d-b0cc-e76004165603
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_list_item_heading_ptlf
+    - paragraphs.paragraphs_type.paragraph_tab_listing_fieldset
+id: paragraph.paragraph_tab_listing_fieldset.field_list_item_heading_ptlf
+field_name: field_list_item_heading_ptlf
+entity_type: paragraph
+bundle: paragraph_tab_listing_fieldset
+label: 'List Item Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

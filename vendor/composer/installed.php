@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
+        'pretty_version' => 'dev-develop',
+        'version' => 'dev-develop',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '6a314f4f8d292a17e1a99a8260ae6bb9aa01cf18',
+        'reference' => 'f61556621eec30c462797af69397c5a3391d6732',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -806,12 +806,12 @@
             ),
         ),
         'drupal/legacy-project' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => 'dev-develop',
+            'version' => 'dev-develop',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '6a314f4f8d292a17e1a99a8260ae6bb9aa01cf18',
+            'reference' => 'f61556621eec30c462797af69397c5a3391d6732',
             'dev_requirement' => false,
         ),
         'drupal/link' => array(
@@ -1520,6 +1520,15 @@
             'reference' => 'e39380b7104b0ec538a075ae919f00c7e5267bac',
             'dev_requirement' => false,
         ),
+        'symfony/deprecation-contracts' => array(
+            'pretty_version' => 'v2.5.0',
+            'version' => '2.5.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
+            'aliases' => array(),
+            'reference' => '6f981ee24cf69ee7ce9736146d1c57c2780598a8',
+            'dev_requirement' => true,
+        ),
         'symfony/event-dispatcher' => array(
             'pretty_version' => 'v3.4.41',
             'version' => '3.4.41.0',
@@ -1539,12 +1548,12 @@
             'dev_requirement' => true,
         ),
         'symfony/finder' => array(
-            'pretty_version' => 'v5.3.7',
-            'version' => '5.3.7.0',
+            'pretty_version' => 'v5.4.0',
+            'version' => '5.4.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/finder',
             'aliases' => array(),
-            'reference' => 'a10000ada1e600d109a6c7632e9ac42e8bf2fb93',
+            'reference' => 'd2f29dac98e96a98be467627bd49c2efb1bc2590',
             'dev_requirement' => true,
         ),
         'symfony/http-foundation' => array(
@@ -1701,12 +1710,12 @@
             'dev_requirement' => false,
         ),
         'symfony/var-dumper' => array(
-            'pretty_version' => 'v4.4.33',
-            'version' => '4.4.33.0',
+            'pretty_version' => 'v4.4.34',
+            'version' => '4.4.34.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/var-dumper',
             'aliases' => array(),
-            'reference' => '50286e2b7189bfb4f419c0731e86632cddf7c5ee',
+            'reference' => '2d0c056b2faaa3d785bdbd5adecc593a5be9c16e',
             'dev_requirement' => false,
         ),
         'symfony/yaml' => array(

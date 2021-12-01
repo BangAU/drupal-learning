@@ -1,0 +1,21 @@
+uuid: 718e0e17-9cd0-460a-bc2f-d49291d53ab8
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_icon_class_ptlf
+field_name: field_icon_class_ptlf
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

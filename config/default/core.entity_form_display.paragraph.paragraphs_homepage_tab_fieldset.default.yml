@@ -1,0 +1,85 @@
+uuid: 66000822-e9ed-495e-846f-3d44c39937ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraphs_homepage_tab_fieldset.field_list_items_phtf
+    - field.field.paragraph.paragraphs_homepage_tab_fieldset.field_tab_blurb_phtf
+    - field.field.paragraph.paragraphs_homepage_tab_fieldset.field_tab_featured_image_phtf
+    - field.field.paragraph.paragraphs_homepage_tab_fieldset.field_tab_heading_phtf
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.paragraphs_homepage_tab_fieldset
+  module:
+    - field_group
+    - image
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_t:
+      children:
+        - field_tab_heading_phtf
+        - field_tab_blurb_phtf
+        - field_tab_featured_image_phtf
+        - field_list_items_phtf
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Tab fields'
+id: paragraph.paragraphs_homepage_tab_fieldset.default
+targetEntityType: paragraph
+bundle: paragraphs_homepage_tab_fieldset
+mode: default
+content:
+  field_list_items_phtf:
+    type: paragraphs
+    weight: 7
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
+  field_tab_blurb_phtf:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_tab_featured_image_phtf:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_tab_heading_phtf:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

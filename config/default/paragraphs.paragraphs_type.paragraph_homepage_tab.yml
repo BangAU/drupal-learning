@@ -1,0 +1,10 @@
+uuid: 41818b5b-d35e-4347-8a08-8dc6e3d7d893
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_homepage_tab
+label: 'Paragraph - Homepage Tab'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

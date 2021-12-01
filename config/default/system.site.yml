@@ -4,7 +4,7 @@ mail: dev@bang.com.au
 slogan: ''
 page:
   403: ''
-  404: ''
+  404: /node/24/
   front: /node/23
 admin_compact_mode: false
 weight_select_max: 100

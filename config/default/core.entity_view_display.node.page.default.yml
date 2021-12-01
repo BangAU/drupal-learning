@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_page_body
+    - field.field.node.page.field_body_content
     - node.type.page
   module:
     - entity_reference_revisions
@@ -15,14 +15,14 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
-  field_page_body:
-    type: entity_reference_revisions_entity_view
-    weight: 0
-    label: hidden
+  field_body_content:
+    weight: 1
+    label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
     region: content
 hidden:
   links: true

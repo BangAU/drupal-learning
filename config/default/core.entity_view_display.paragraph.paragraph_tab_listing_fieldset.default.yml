@@ -1,0 +1,38 @@
+uuid: cc87477a-d175-437f-a1ed-8feef69001ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_tab_listing_fieldset.field_icon_class_ptlf
+    - field.field.paragraph.paragraph_tab_listing_fieldset.field_list_item_blurb_ptlf
+    - field.field.paragraph.paragraph_tab_listing_fieldset.field_list_item_heading_ptlf
+    - paragraphs.paragraphs_type.paragraph_tab_listing_fieldset
+id: paragraph.paragraph_tab_listing_fieldset.default
+targetEntityType: paragraph
+bundle: paragraph_tab_listing_fieldset
+mode: default
+content:
+  field_icon_class_ptlf:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_list_item_blurb_ptlf:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_list_item_heading_ptlf:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

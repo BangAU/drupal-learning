@@ -1,0 +1,62 @@
+uuid: d6abf727-7fba-47a7-97a1-7844a01d5194
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_tab_listing_fieldset.field_icon_class_ptlf
+    - field.field.paragraph.paragraph_tab_listing_fieldset.field_list_item_blurb_ptlf
+    - field.field.paragraph.paragraph_tab_listing_fieldset.field_list_item_heading_ptlf
+    - paragraphs.paragraphs_type.paragraph_tab_listing_fieldset
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_list_item_fields_ptlf:
+      children:
+        - field_icon_class_ptlf
+        - field_list_item_heading_ptlf
+        - field_list_item_blurb_ptlf
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'List Item Fields'
+id: paragraph.paragraph_tab_listing_fieldset.default
+targetEntityType: paragraph
+bundle: paragraph_tab_listing_fieldset
+mode: default
+content:
+  field_icon_class_ptlf:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_list_item_blurb_ptlf:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_list_item_heading_ptlf:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,38 @@
+uuid: b5a8d097-7e79-47c5-82b9-7f3dc058b3a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab_featured_image_phtf
+    - paragraphs.paragraphs_type.paragraphs_homepage_tab_fieldset
+  module:
+    - image
+id: paragraph.paragraphs_homepage_tab_fieldset.field_tab_featured_image_phtf
+field_name: field_tab_featured_image_phtf
+entity_type: paragraph
+bundle: paragraphs_homepage_tab_fieldset
+label: 'Tab Featured Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

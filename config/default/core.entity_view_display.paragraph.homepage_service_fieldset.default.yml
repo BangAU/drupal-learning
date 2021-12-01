@@ -3,9 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.homepage_service_fieldset.field_heading_pthsf
+    - field.field.paragraph.homepage_service_fieldset.field_heading_hsfmf
     - field.field.paragraph.homepage_service_fieldset.field_select_services_pthsf
-    - field.field.paragraph.homepage_service_fieldset.field_sub_heading_pthsf
+    - field.field.paragraph.homepage_service_fieldset.field_sub_heding_hsfmf
     - paragraphs.paragraphs_type.homepage_service_fieldset
   module:
     - viewsreference
@@ -14,8 +14,8 @@ targetEntityType: paragraph
 bundle: homepage_service_fieldset
 mode: default
 content:
-  field_heading_pthsf:
-    weight: 1
+  field_heading_hsfmf:
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
@@ -31,8 +31,8 @@ content:
     third_party_settings: {  }
     type: viewsreference_formatter
     region: content
-  field_sub_heading_pthsf:
-    weight: 0
+  field_sub_heding_hsfmf:
+    weight: 5
     label: hidden
     settings:
       link_to_entity: false

@@ -1,0 +1,24 @@
+uuid: bc248d09-1ec7-40c3-8254-7d9c0261f63f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraphs_home_logo_slider_fiel.field_logo_hlsf
+    - paragraphs.paragraphs_type.paragraphs_home_logo_slider_fiel
+  module:
+    - image
+id: paragraph.paragraphs_home_logo_slider_fiel.default
+targetEntityType: paragraph
+bundle: paragraphs_home_logo_slider_fiel
+mode: default
+content:
+  field_logo_hlsf:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

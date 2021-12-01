@@ -1,0 +1,51 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+
+
+<div class="row">
+    {% for row in rows %}
+        {% set viewEntity = row.content['#view'].style_plugin.render_tokens[loop.index0] %}
+    <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms">
+        <!--Services One Single-->
+        <div class="services-one__single">
+            <div class="services-one__img">
+                <img src="{{ viewEntity['{{ field_overview_image }}']|striptags|trim }}" alt="{{ viewEntity['{{ field_overview_image }}']|striptags|trim|raw }}">
+                <div class="services-one__icon">
+                    <span class="icon-industrial"></span>
+                </div>
+            </div>
+            <div class="services-one__content">
+                <h3 class="services-one__title"><a href="{{ viewEntity['{{ view_node }}']|striptags|trim }}">{{ viewEntity['{{ field_main_heading }}']|striptags|trim|raw }}</a>
+                </h3>
+                <p class="services-one__text">{{ viewEntity['{{ field_services_overview_ss }}']|striptags|trim|raw }}</p>
+                <div class="services-one__arrow">
+                    <a href="{{ viewEntity['{{ view_node }}']|striptags|trim }}"><span class="icon-right-arrow"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+        <!--Services One End-->
+

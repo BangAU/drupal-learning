@@ -1,0 +1,52 @@
+uuid: ce78df31-9132-48f3-9c07-82079e48a0ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraphs_homepage_tab_fieldset.field_list_items_phtf
+    - field.field.paragraph.paragraphs_homepage_tab_fieldset.field_tab_blurb_phtf
+    - field.field.paragraph.paragraphs_homepage_tab_fieldset.field_tab_featured_image_phtf
+    - field.field.paragraph.paragraphs_homepage_tab_fieldset.field_tab_heading_phtf
+    - paragraphs.paragraphs_type.paragraphs_homepage_tab_fieldset
+  module:
+    - entity_reference_revisions
+    - image
+id: paragraph.paragraphs_homepage_tab_fieldset.default
+targetEntityType: paragraph
+bundle: paragraphs_homepage_tab_fieldset
+mode: default
+content:
+  field_list_items_phtf:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_tab_blurb_phtf:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_tab_featured_image_phtf:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_tab_heading_phtf:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

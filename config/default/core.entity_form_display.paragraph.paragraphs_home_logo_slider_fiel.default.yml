@@ -1,0 +1,44 @@
+uuid: 17f8bc58-2bff-4873-984a-479c253ad8c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraphs_home_logo_slider_fiel.field_logo_hlsf
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.paragraphs_home_logo_slider_fiel
+  module:
+    - field_group
+    - image
+third_party_settings:
+  field_group:
+    group_logo:
+      children:
+        - field_logo_hlsf
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Logo
+id: paragraph.paragraphs_home_logo_slider_fiel.default
+targetEntityType: paragraph
+bundle: paragraphs_home_logo_slider_fiel
+mode: default
+content:
+  field_logo_hlsf:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

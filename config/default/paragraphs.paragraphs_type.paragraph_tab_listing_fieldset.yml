@@ -1,0 +1,10 @@
+uuid: 5d10873e-d324-43b1-9397-2fce6e695503
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_tab_listing_fieldset
+label: 'Paragraph  - Tab Listing fieldset'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

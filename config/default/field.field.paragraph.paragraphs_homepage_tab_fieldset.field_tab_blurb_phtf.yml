@@ -1,0 +1,19 @@
+uuid: bcf129be-b986-44ff-a306-a9c71243e4db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab_blurb_phtf
+    - paragraphs.paragraphs_type.paragraphs_homepage_tab_fieldset
+id: paragraph.paragraphs_homepage_tab_fieldset.field_tab_blurb_phtf
+field_name: field_tab_blurb_phtf
+entity_type: paragraph
+bundle: paragraphs_homepage_tab_fieldset
+label: 'Tab Blurb'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

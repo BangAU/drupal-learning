@@ -1,0 +1,24 @@
+uuid: 9fab7be8-b5b3-48f8-8890-cb088028783f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraphs_home_logo_slider.field_home_logo_slider_fields
+    - paragraphs.paragraphs_type.paragraphs_home_logo_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.paragraphs_home_logo_slider.default
+targetEntityType: paragraph
+bundle: paragraphs_home_logo_slider
+mode: default
+content:
+  field_home_logo_slider_fields:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

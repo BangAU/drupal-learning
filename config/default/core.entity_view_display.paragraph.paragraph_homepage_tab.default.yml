@@ -1,0 +1,24 @@
+uuid: e52f6f68-91e7-4130-a80a-86824a4d3a05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_homepage_tab.field_home
+    - paragraphs.paragraphs_type.paragraph_homepage_tab
+  module:
+    - entity_reference_revisions
+id: paragraph.paragraph_homepage_tab.default
+targetEntityType: paragraph
+bundle: paragraph_homepage_tab
+mode: default
+content:
+  field_home:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

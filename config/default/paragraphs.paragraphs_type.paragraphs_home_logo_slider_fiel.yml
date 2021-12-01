@@ -1,0 +1,10 @@
+uuid: cc7b1791-8eca-4e01-9fe1-6372dad96795
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphs_home_logo_slider_fiel
+label: 'Paragraphs - Home logo slider Fieldset'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

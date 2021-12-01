@@ -1,0 +1,10 @@
+uuid: a8dbd52f-8bc8-483c-842f-b59000388097
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphs_home_logo_slider
+label: 'Paragraphs - Home logo slider'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

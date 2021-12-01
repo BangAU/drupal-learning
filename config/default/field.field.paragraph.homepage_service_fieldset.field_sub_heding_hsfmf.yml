@@ -1,0 +1,19 @@
+uuid: a8dbd4ed-2b5f-4602-9079-793e509011b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_heding_hsfmf
+    - paragraphs.paragraphs_type.homepage_service_fieldset
+id: paragraph.homepage_service_fieldset.field_sub_heding_hsfmf
+field_name: field_sub_heding_hsfmf
+entity_type: paragraph
+bundle: homepage_service_fieldset
+label: 'Sub Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

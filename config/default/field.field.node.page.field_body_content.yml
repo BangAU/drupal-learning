@@ -1,0 +1,77 @@
+uuid: 7783f158-6fc2-4829-98d1-b054b3deca9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_content
+    - node.type.page
+    - paragraphs.paragraphs_type.homepage_about_us_module
+    - paragraphs.paragraphs_type.paragraph_page_banner
+    - paragraphs.paragraphs_type.paragraphs_services_content_area
+  module:
+    - entity_reference_revisions
+id: node.page.field_body_content
+field_name: field_body_content
+entity_type: node
+bundle: page
+label: 'Body Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      homepage_about_us_module: homepage_about_us_module
+      paragraphs_services_content_area: paragraphs_services_content_area
+      paragraph_page_banner: paragraph_page_banner
+    target_bundles_drag_drop:
+      footer_contact_fieldset:
+        weight: 16
+        enabled: false
+      homepage_about_us_module:
+        enabled: true
+        weight: 17
+      homepage_service_fieldset:
+        weight: 18
+        enabled: false
+      homepage_slider:
+        weight: 19
+        enabled: false
+      homepage_slider_fieldset:
+        weight: 20
+        enabled: false
+      image_and_listing_module_fieldse:
+        weight: 21
+        enabled: false
+      list_item_fieldset:
+        weight: 22
+        enabled: false
+      paragraph_image_and_listing_mod:
+        weight: 26
+        enabled: false
+      paragraph_page_banner:
+        enabled: true
+        weight: 27
+      paragraphs_services_accordion:
+        weight: 23
+        enabled: false
+      paragraphs_services_accordion_fi:
+        weight: 24
+        enabled: false
+      paragraphs_services_content_area:
+        enabled: true
+        weight: 25
+      service_featured_block_list_fiel:
+        weight: 29
+        enabled: false
+      services_featured_image:
+        weight: 28
+        enabled: false
+      social_links_filedset:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

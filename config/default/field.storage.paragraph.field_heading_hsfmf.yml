@@ -1,0 +1,21 @@
+uuid: 30970612-9318-4a54-8716-1684578a25c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_heading_hsfmf
+field_name: field_heading_hsfmf
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

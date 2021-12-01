@@ -1,0 +1,19 @@
+uuid: 941acf73-97e5-4dcb-8d5c-77d1eeb199f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tab_heading_phtf
+    - paragraphs.paragraphs_type.paragraphs_homepage_tab_fieldset
+id: paragraph.paragraphs_homepage_tab_fieldset.field_tab_heading_phtf
+field_name: field_tab_heading_phtf
+entity_type: paragraph
+bundle: paragraphs_homepage_tab_fieldset
+label: 'Tab Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
